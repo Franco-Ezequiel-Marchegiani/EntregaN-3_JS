@@ -516,6 +516,12 @@ body.dark .navbar a:hover {
   margin: 10px;
 }
 
+@media only screen and (max-width: 320px) {
+  .navbar img {
+    width: 10px;
+  }
+}
+
 body {
   background: #fcfcfc;
 }

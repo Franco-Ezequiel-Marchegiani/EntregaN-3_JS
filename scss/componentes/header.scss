@@ -23,9 +23,11 @@
         }
               
     }
-    img{
-        width: 100px;
-        height: 100px;
+    .navbar-brand{
+        img{
+            width: 100px;
+            height: 100px;
+        }
     }
     nav{
         align-self: center;
@@ -35,5 +37,45 @@
     .nav-link{
         padding: 5px;
         margin: 10px;
+    }
+}
+@media only screen and (max-width:320px){
+    .navbar{
+        .navbar-brand{
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:321px) and (max-width: 599px){
+    .navbar{
+        .navbar-brand{
+            img{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:600px) and (max-width:768px){
+    .navbar{
+        .navbar-brand{
+            img{
+                width: 85px;
+                height: 85px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1199px){
+    .navbar{
+        .navbar-brand{
+            img{
+                width: 90px;
+                height: 90px;
+            }
+        }
     }
 }

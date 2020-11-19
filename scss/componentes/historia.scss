@@ -8,9 +8,12 @@ body{
     }
 }
 .seccion__historia{
-    ul{
-        font-size: $subTitulo-computadora;
-    }
+        ul{
+            font-size: $subTitulo-computadora;
+        }
+        h3{
+            padding: 40px;
+        }
         h4{
             text-align:center;
             padding: 40px;

@@ -285,7 +285,7 @@ footer {
       color: #fcfcfc; }
       body.dark .navbar a:hover {
         color: #ACABAB; }
-  .navbar img {
+  .navbar .navbar-brand img {
     width: 100px;
     height: 100px; }
   .navbar nav {
@@ -296,6 +296,26 @@ footer {
     padding: 5px;
     margin: 10px; }
 
+@media only screen and (max-width: 320px) {
+  .navbar .navbar-brand img {
+    width: 60px;
+    height: 60px; } }
+
+@media only screen and (min-width: 321px) and (max-width: 599px) {
+  .navbar .navbar-brand img {
+    width: 70px;
+    height: 70px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .navbar .navbar-brand img {
+    width: 85px;
+    height: 85px; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .navbar .navbar-brand img {
+    width: 90px;
+    height: 90px; } }
+
 body {
   background: #fcfcfc; }
   .dark body {
@@ -304,6 +324,9 @@ body {
 
 .seccion__historia ul {
   font-size: 26px; }
+
+.seccion__historia h3 {
+  padding: 40px; }
 
 .seccion__historia h4 {
   text-align: center;
@@ -974,6 +997,9 @@ html {
   padding-top: 30px;
   padding-bottom: 100px; }
 
+.seccion__liveAid img {
+  width: 100%; }
+
 @media only screen and (max-width: 320px) {
   .home .imagen__slider {
     width: 100%;
@@ -1009,6 +1035,7 @@ html {
 
 .seccion__liveAid .titulo__liveAid {
   text-align: center;
+  padding: 40px;
   font-size: 45px; }
 
 .seccion__liveAid iframe {
@@ -1049,10 +1076,6 @@ html {
     padding-top: 20px;
     width: 100%;
     height: 500px; } }
-
-iframe {
-  width: 100%;
-  height: 750px; }
 
 .switch {
   text-align: center;
@@ -1122,3 +1145,53 @@ body.dark .modal-body p {
 
 .shopping-cart-total {
   min-height: 96px; }
+
+.seccion__pelicula img {
+  width: 100%;
+  height: 750px; }
+
+.seccion__pelicula h3 {
+  text-align: center;
+  padding: 40px;
+  font-size: 45px; }
+
+.seccion__pelicula p {
+  text-align: center;
+  padding: 40px;
+  font-size: 26px; }
+
+@media only screen and (max-width: 320px) {
+  .seccion__pelicula img {
+    height: 100%; }
+  .seccion__pelicula h3 {
+    font-size: 25px; }
+  .seccion__pelicula p {
+    font-size: 18px; } }
+
+@media only screen and (min-width: 321px) and (max-width: 599px) {
+  .seccion__pelicula img {
+    height: 100%; }
+  .seccion__pelicula h3 {
+    font-size: 30px; }
+  .seccion__pelicula p {
+    font-size: 20px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .seccion__pelicula img {
+    height: 100%; }
+  .seccion__pelicula h3 {
+    font-size: 35px; }
+  .seccion__pelicula p {
+    font-size: 22px; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .seccion__pelicula img {
+    height: 70%; }
+  .seccion__pelicula h3 {
+    font-size: 40px; }
+  .seccion__pelicula p {
+    font-size: 24px; } }
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .seccion__pelicula img {
+    height: 80%; } }
