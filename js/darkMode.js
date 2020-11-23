@@ -14,16 +14,18 @@ var fotoBrian = "brianColor";
 var fotoJohn = "johnColor";
 var fotoRoger = "rogerColor";
 var fotoQueenArg = "queenArgColor"
+var fotoMostradaFooter = "logoFooterDark"
 //Se accede al buton del HTML desde el evento "onClick" nombrando a la siguiente función: 
 function funcionDarkMode(){
     //Acá define las variables con el elemento del HTML (utilizando DOM)
-    var logoQueen = document.getElementById("logoQueen");
-    var imagenQueen = document.getElementById("queen");
-    var imagenFreddie = document.getElementById("freddieMercury");
-    var imagenBrian = document.getElementById("brianMay");
-    var imagenJohn = document.getElementById("johnDeacon");
-    var imagenRoger = document.getElementById("rogerTaylor");
-    var imagenQueenArg = document.getElementById("queenArgentina");
+    let logoQueen = document.getElementById("logoQueen");
+    let imagenQueen = document.getElementById("queen");
+    let imagenFreddie = document.getElementById("freddieMercury");
+    let imagenBrian = document.getElementById("brianMay");
+    let imagenJohn = document.getElementById("johnDeacon");
+    let imagenRoger = document.getElementById("rogerTaylor");
+    let imagenQueenArg = document.getElementById("queenArgentina");
+    let logoQueenFooter = document.getElementById("icono__footer")
     //Condicional foto Logo
     //Cambio a foto a color
     if(fotoMostrada == "logoDark"){
@@ -32,6 +34,14 @@ function funcionDarkMode(){
     } else{ //Vuelve el ícono a blanco y negro
         logoQueen.src = "./Imagenes/logo.png";
         fotoMostrada = "logoDark";
+    }
+    //Cambio foto logo Footer
+    if(fotoMostradaFooter == "logoFooterDark"){
+        logoQueenFooter.src = "./Imagenes/logo_icon.png";
+        fotoMostradaFooter = "logoFooterColor"
+    } else{
+        logoQueenFooter.src = "./Imagenes/logo.png";
+        fotoMostradaFooter = "logoFooterDark"
     }
     //Condicional foto Queen
     //Mantiene foto a color

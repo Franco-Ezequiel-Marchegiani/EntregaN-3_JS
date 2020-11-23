@@ -94,4 +94,19 @@ $("#boton_carritoCompras").click(function(e){
     })
 })
 
+//Scroll Ícono header y footer
+$("#logoQueen").click(function(e){
+    e.preventDefault()
+    $("html, body").animate({
+        scrollTop:$("body").offset().top
+    }, 1500);
+})
+
+$("#footer-home").click(function(e){
+    e.preventDefault()
+    $("html, body").animate({
+        scrollTop:$("body").offset().top
+    }, 1500);
+})
+
 // *** FIN SCROLL ***
